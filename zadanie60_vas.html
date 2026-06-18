@@ -1,0 +1,11 @@
+
+<!DOCTYPE html><html><body><script>
+var R=parseFloat(prompt("Promień R"));
+var n=0;
+for(let i=Math.floor(-R-1);i<=Math.floor(R+1);i++){
+ for(let j=Math.floor(-R-1);j<=Math.floor(R+1);j++){
+   if(i*i+j*j<=R*R) n++;
+ }
+}
+document.write("N(R)="+n);
+</script></body></html>

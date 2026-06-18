@@ -1,0 +1,11 @@
+
+<!DOCTYPE html><html><body><script>
+var l1_vas,l2_vas;
+do{l1_vas=parseInt(prompt("L1 20-60"));}while(l1_vas<20||l1_vas>60);
+do{l2_vas=parseInt(prompt("L2 20-60"));}while(l2_vas<20||l2_vas>60);
+var pocz_vas=parseInt(prompt("Początkowy rozmiar"));
+var tekst_vas=prompt("Tekst");
+if(l1_vas<l2_vas){for(let i=pocz_vas;i<=100;i+=5) document.write("<p style='font-size:"+i+"px'>"+tekst_vas+"</p>");}
+else if(l2_vas<l1_vas){for(let i=pocz_vas;i>=0;i-=5) document.write("<p style='font-size:"+i+"px'>"+tekst_vas+"</p>");}
+else document.write("<p style='font-size:"+pocz_vas+"px'>"+tekst_vas+"</p>");
+</script></body></html>
